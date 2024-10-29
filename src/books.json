@@ -22,9 +22,7 @@
           "title": "Chapter 1",
           "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
         },
-        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" }
       ],
       "cover": "/covers/1000_QL80_.jpg"
     },
