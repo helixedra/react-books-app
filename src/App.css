@@ -1,0 +1,85 @@
+nav {
+  /* height: 68px; */
+  background-color: black;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+nav li {
+}
+nav li a {
+  /* padding: 8px; */
+  color: white;
+}
+.books_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  /* align-items: cente; */
+}
+.book {
+}
+.book_title {
+  font-size: 16px;
+  margin-top: 16px;
+  line-height: 24px;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  /* max-height: 48px; */
+}
+
+.book_cover_xs {
+  /* width: 200px; */
+  max-height: 100px;
+}
+.book_cover_s {
+  width: 200px;
+  max-height: 300px;
+}
+.book_cover_xl {
+  width: 300px;
+  /* max-height: 300px; */
+}
+.breadcrumbs a {
+  font-size: 14px;
+  color: rgb(76, 0, 255);
+}
+.breadcrumbs {
+  margin: 16px 0;
+  color: rgb(161, 161, 161);
+}
+.breadcrumbs span {
+  display: inline-block;
+  margin: 0 8px;
+  color: black;
+}
+.floating_window {
+  background-color: white;
+  padding: 16px;
+  margin: 8px;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  box-shadow: 2px 8px 20px #0000004b;
+  /* width: calc(100% - 32px); */
+  display: flex;
+  /* width: ; */
+}
+.space {
+  height: 160px;
+}
+.hide {
+  display: none;
+}

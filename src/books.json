@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Alice in Wonderland: The Original 1865 Edition With Complete Illustrations By Sir John Tenniel",
+      "files": [
+        {
+          "title": "Chapter 1",
+          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+        },
+        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+      ],
+      "cover": "/covers/71O1It5N1VS.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Mystery of Cloomber. (1889) By: Arthur Conan Doyle",
+      "files": [
+        {
+          "title": "Chapter 1",
+          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+        },
+        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+      ],
+      "cover": "/covers/1000_QL80_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Book 3",
+      "files": [
+        {
+          "title": "Chapter 1",
+          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+        },
+        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+      ],
+      "cover": "/covers/71O1It5N1VS.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Book 4",
+      "files": [
+        {
+          "title": "Chapter 1",
+          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+        },
+        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
+        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+      ],
+      "cover": "/covers/71O1It5N1VS.jpg"
+    }
+  ]
+}
