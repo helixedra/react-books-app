@@ -7,13 +7,10 @@ function AudioItem({ audio: { id, title }, book }) {
   const bookId = book;
   const fileId = id;
   const { playInContext, isPlaying, playerFile } = useAudioPlayer();
-  // console.log(playerFile.fileId);
 
   return (
     <>
       <div className="audio_block">
-        {/* <div className="audio_title">{title}</div> */}
-        {/* <button onClick={() => play(bookId, fileId)}>{title}</button> */}
         <button
           className="audio_title"
           onClick={() => playInContext(bookId, fileId)}

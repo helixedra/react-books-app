@@ -16,8 +16,6 @@ function SingleBookPage() {
     return <h2>Книга не знайдена</h2>;
   }
 
-  // Рендеримо компонент BookItem з даними знайденої книги
-
   return (
     <>
       <div className="breadcrumbs">

@@ -24,11 +24,6 @@ export const AudioProvider = ({ children }) => {
     const book = booksData.books.find((book) => book.id === parseInt(bookId));
     const file = book?.files?.find((file) => file.id === parseInt(fileId));
 
-    // console.log(book);
-    // console.log(file);
-
-    // console.log("PlayInContext");
-
     setPlayerFile({
       fileTitle: file.title,
       file: file.file,
@@ -37,10 +32,8 @@ export const AudioProvider = ({ children }) => {
       bookTitle: book.title,
       bookCover: book.cover,
     });
-    audioRef.current.src = file.file; // Set the audio source
-    // setIsPlaying(!isPlaying);
-    // console.log(file);
-    // togglePlayPause(file);
+    audioRef.current.src = file.file;
+
     if (playerFile) {
       if (bookId === playerFile?.bookId && fileId === playerFile?.fileId) {
         // console.log("SAME");
@@ -52,22 +45,9 @@ export const AudioProvider = ({ children }) => {
     } else {
       togglePlayPause("different");
     }
-    // if (file) {
-    //   // setPlaying(`${book.id}-${file.id}`);
-    // }
-    // console.log(playing);
-    // togglePlayPause();
-    // audioRef.current.play().catch((error) => {
-    //   console.error("Error playing audio:", error);
-    // });
   };
 
-  // Функція для запуску або зупинки аудіо
   const togglePlayPause = (playback = "same") => {
-    // console.log(file);
-    // console.log("clicked");
-    // console.log(playback);
-
     if (playback === "same") {
       if (isPlaying) {
         // console.log(isPlaying);
