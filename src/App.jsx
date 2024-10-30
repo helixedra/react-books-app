@@ -10,27 +10,6 @@ import Player from "./Player";
 import { AudioProvider } from "./AudioPlayerContext";
 
 function App() {
-  // const [currentPlay, setCurrentPlay] = useState(null);
-
-  // // Функція для встановлення аудіофайлу, який буде відтворюватися в Player
-  // function getPlayer(bookId, fileId) {
-  //   const book = booksData.books.find((book) => book.id === parseInt(bookId));
-  //   const file = book?.files?.find((file) => file.id === parseInt(fileId));
-
-  //   if (book && file) {
-  //     setCurrentPlay({
-  //       fileTitle: file.title,
-  //       file: file.file,
-  //       bookTitle: book.title,
-  //       bookCover: book.cover,
-  //     });
-
-  //     // console.log("play");
-  //   } else {
-  //     console.error("Book or file not found");
-  //   }
-  // }
-
   return (
     <AudioProvider>
       <div className="wrapper">

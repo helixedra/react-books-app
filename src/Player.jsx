@@ -11,7 +11,6 @@ function Player() {
     togglePlayPause,
     playerFile,
   } = useAudioPlayer();
-  // console.log(playerFile);
 
   return (
     <>
