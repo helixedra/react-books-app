@@ -4,7 +4,7 @@ import BooksData from "./books.json";
 import AudioItem from "./AudioItem";
 // import { render } from "react-dom";
 
-function SingleBookPage({ play }) {
+function SingleBookPage() {
   // Отримуємо параметр id з URL
   const { id } = useParams();
 
@@ -35,9 +35,8 @@ function SingleBookPage({ play }) {
             <AudioItem
               audio={audio}
               key={audio.title}
-              play={play}
-              book={book.title}
-              bookCover={book.cover}
+              id={audio.id}
+              book={book.id}
             />
           ))}
         </div>

@@ -1,4 +1,4 @@
-function BookItem({ data: { id, title, cover } }) {
+function BookItem({ data: { id, title, author, cover } }) {
   return (
     <>
       <div className="book_item">
@@ -7,6 +7,7 @@ function BookItem({ data: { id, title, cover } }) {
             <img className="book_cover_s" src={cover} alt="" />
           </div>
           <div className="book_title">{title}</div>
+          <div className="book_author">{author}</div>
         </a>
       </div>
     </>

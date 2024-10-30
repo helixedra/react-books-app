@@ -1,65 +1,52 @@
-import { useRef, useState, useEffect } from "react";
+import { useAudioPlayer } from "./AudioPlayerContext";
 
 function Player() {
-  const audioRef = useRef(null); // ref для аудіо
-  const [isPlaying, setIsPlaying] = useState(false); // стан для відстеження відтворення
-  const [progress, setProgress] = useState(0); // стан для прогресу
-
-  // Функція для запуску або зупинки аудіо
-  const togglePlayPause = () => {
-    if (isPlaying) {
-      audioRef.current.pause(); // Зупиняємо аудіо
-    } else {
-      audioRef.current.play(); // Запускаємо аудіо
-    }
-    setIsPlaying(!isPlaying); // Змінюємо стан
-  };
-
-  // Функція для оновлення прогресу
-  const updateProgress = () => {
-    const currentTime = audioRef.current.currentTime; // поточний час
-    const duration = audioRef.current.duration; // загальна тривалість
-    setProgress((currentTime / duration) * 100); // обчислюємо відсоток прогресу
-  };
-
-  // Додаємо обробник події timeupdate
-  useEffect(() => {
-    const audioElement = audioRef.current;
-    audioElement.addEventListener("timeupdate", updateProgress);
-
-    return () => {
-      audioElement.removeEventListener("timeupdate", updateProgress); // очищення
-    };
-  }, []);
+  //Context
+  const {
+    audioRef,
+    isPlaying,
+    progress,
+    currentTime,
+    duration,
+    togglePlayPause,
+    playerFile,
+  } = useAudioPlayer();
+  // console.log(playerFile);
 
   return (
     <>
       <audio id="player" ref={audioRef}>
-        <source src="/books/061225_fiction_ford.mp3" type="audio/mpeg" />
+        <source src={playerFile ? playerFile.file : null} type="audio/mpeg" />
       </audio>
       <div className="player_container">
         <div className="top_container">
-          <div className="player_title">BookName : Chapter 1</div>
+          <div className="player_title">
+            {playerFile
+              ? `${playerFile.bookTitle} : ${playerFile.fileTitle}`
+              : null}
+          </div>
           <div className="player_progress">
             <progress id="audiofile" value={progress} max="100"></progress>
           </div>
           <div className="player_time">
-            <div className="player_current_time">
-              {formatTime(audioRef.current?.currentTime || 0)}
-            </div>
-            <div className="player_full_time">
-              {formatTime(audioRef.current?.duration || 0)}
-            </div>
+            <div className="player_current_time">{formatTime(currentTime)}</div>
+            <div className="player_full_time">{formatTime(duration)}</div>
           </div>
         </div>
         <div className="bottom_container">
           <button className="player_mid_button">&#9198;</button>
           {isPlaying ? (
-            <button className="player_big_button" onClick={togglePlayPause}>
+            <button
+              className="player_big_button"
+              onClick={() => togglePlayPause()}
+            >
               &#9208;
             </button>
           ) : (
-            <button className="player_big_button" onClick={togglePlayPause}>
+            <button
+              className="player_big_button"
+              onClick={() => togglePlayPause()}
+            >
               &#9205;
             </button>
           )}

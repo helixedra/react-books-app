@@ -2,57 +2,70 @@
   "books": [
     {
       "id": 1,
-      "title": "Alice in Wonderland: The Original 1865 Edition With Complete Illustrations By Sir John Tenniel",
+      "title": "Alice in Wonderland",
+      "author": "Lewis Carroll",
       "files": [
         {
-          "title": "Chapter 1",
-          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+          "id": 1,
+          "title": "Down the Rabbit Hole",
+          "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_01_carroll_64kb.mp3"
         },
-        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+        {
+          "id": 2,
+          "title": "The Pool of Tears",
+          "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_02_carroll_64kb.mp3"
+        }
       ],
-      "cover": "/covers/71O1It5N1VS.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71O1It5N1VS._AC_UF1000,1000_QL80_.jpg"
     },
     {
       "id": 2,
-      "title": "The Mystery of Cloomber. (1889) By: Arthur Conan Doyle",
+      "title": "The Adventures of Tom Sawyer",
+      "author": "Mark Twain",
       "files": [
         {
+          "id": 1,
           "title": "Chapter 1",
-          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+          "file": "https://ia800103.us.archive.org/19/items/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_01_twain_128kb.mp3"
         },
-        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" }
+        {
+          "id": 2,
+          "title": "Chapter 2",
+          "file": "https://www.archive.org/download/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_02_twain_128kb.mp3"
+        }
       ],
-      "cover": "/covers/1000_QL80_.jpg"
+      "cover": "https://webfiles.ucpress.edu/coverimage/isbn13/9780520343634.jpg"
     },
     {
       "id": 3,
-      "title": "Book 3",
+      "title": "Merry Adventures of Robin Hood",
+      "author": "Howard Pyle",
       "files": [
         {
-          "title": "Chapter 1",
-          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
+          "id": 1,
+          "title": "How Robin Hood Came to be an Outlaw",
+          "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_01_pyle_64kb.mp3"
         },
-        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+        {
+          "id": 2,
+          "title": "Robin Hood and the Tinker",
+          "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_02_pyle_64kb.mp3"
+        }
       ],
-      "cover": "/covers/71O1It5N1VS.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81n5FKeo6vL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       "id": 4,
-      "title": "Book 4",
+      "title": "War of the Worlds",
+      "author": "H.G. Wells",
       "files": [
         {
-          "title": "Chapter 1",
-          "file": "/books/alices-adventures-in-wonderland-001-chapter-i-down-the-rabbit-hole.1.mp3"
-        },
-        { "title": "Chapter 2", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 3", "file": "/books/book1/chapter_1.mp3" },
-        { "title": "Chapter 4", "file": "/books/book1/chapter_1.mp3" }
+          "id": 1,
+          "title": "The War of the Worlds - Book 1 - Chapter 01",
+          "file": "https://archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_01_wells_64kb.mp3"
+        }
       ],
-      "cover": "/covers/71O1It5N1VS.jpg"
+      "cover": "https://static.wikia.nocookie.net/waroftheworlds/images/4/43/Blog_waroftheworldsbookcover.jpg"
     }
   ]
 }

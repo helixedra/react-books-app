@@ -34,14 +34,22 @@ nav li a {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: wrap;
+  padding: 24px;
+  /* width: min-content; */
   /* align-items: cente; */
+}
+.book_item {
+  padding: 16px;
+  background-color: #ffffff10;
 }
 .book {
 }
-.book_title {
+
+a .book_title {
   font-size: 16px;
   margin-top: 16px;
-  line-height: 24px;
+  line-height: 20px;
   max-width: 400px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -49,10 +57,21 @@ nav li a {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-weight: bold;
+  color: #5500ff;
 
   /* max-height: 48px; */
 }
-
+a .book_author {
+  font-size: 14px;
+  color: black;
+  margin-top: 8px;
+}
+.book_cover {
+  padding: 8px;
+  text-align: center;
+  /* background-color: #f2f2f24b; */
+}
 .book_cover_xs {
   /* width: 200px; */
   max-height: 100px;
@@ -169,4 +188,35 @@ nav li a {
 }
 button {
   cursor: pointer;
+}
+button.audio_title {
+  padding: 16px;
+  background: none;
+  border: none;
+  margin: 4px 0;
+  font-size: 18px;
+}
+button.audio_title:hover {
+  background-color: #00000008;
+}
+
+span.audio_icon {
+  margin-right: 16px;
+  font-size: 14px;
+  /* color: #00000086; */
+  animation: blinking 2s infinite ease-in-out;
+}
+span.audio_title_active {
+  font-weight: bold;
+}
+@keyframes blinking {
+  0% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0.1; /* Invisible */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+  }
 }

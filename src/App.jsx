@@ -1,44 +1,38 @@
-// import { useState } from "react";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import { useEffect } from "react";
 import "./App.css";
-// import BookItem from "./BookItem";
-// import BooksList from "./BooksList";
-// import * from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import BooksPage from "./BooksPage";
 import SingleBookPage from "./SingleBookPage";
-// import CurrentPlay from "./CurrentPlay";
 // import { useState } from "react";
 import Player from "./Player";
+// import booksData from "./books.json";
+import { AudioProvider } from "./AudioPlayerContext";
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // useEffect(() => {
-  //   fetch("https://jsonplaceholder.typicode.com/todos/1")
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data));
-  //   // .then((json) => console.log(json));
-  //   // console.log(response);
-  // }, []);
+  // const [currentPlay, setCurrentPlay] = useState(null);
 
-  // const [currentPlay, setCurrentPlay] = useState("none");
+  // // Функція для встановлення аудіофайлу, який буде відтворюватися в Player
+  // function getPlayer(bookId, fileId) {
+  //   const book = booksData.books.find((book) => book.id === parseInt(bookId));
+  //   const file = book?.files?.find((file) => file.id === parseInt(fileId));
 
-  // function getCurrentPlay(title, book, bookCover) {
-  //   return setCurrentPlay({
-  //     fileTitle: title,
-  //     bookTitle: book,
-  //     bookCover: bookCover,
-  //   });
-  //   // alert();
+  //   if (book && file) {
+  //     setCurrentPlay({
+  //       fileTitle: file.title,
+  //       file: file.file,
+  //       bookTitle: book.title,
+  //       bookCover: book.cover,
+  //     });
+
+  //     // console.log("play");
+  //   } else {
+  //     console.error("Book or file not found");
+  //   }
   // }
 
   return (
-    <>
-      {/* <a href="/">Home</a> */}
+    <AudioProvider>
       <div className="wrapper">
         <Router>
           <header>
@@ -54,11 +48,9 @@ function App() {
           <footer>
             <Player />
           </footer>
-          {/* <div className="space"></div>
-        <CurrentPlay current={currentPlay} /> */}
         </Router>
       </div>
-    </>
+    </AudioProvider>
   );
 }
 
