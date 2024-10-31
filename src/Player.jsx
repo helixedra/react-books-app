@@ -1,4 +1,11 @@
-import { useAudioPlayer } from "./AudioPlayerContext";
+import { useAudioPlayer } from './AudioPlayerContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faPlay,
+  faPause,
+  faBackwardStep,
+  faForwardStep,
+} from '@fortawesome/free-solid-svg-icons';
 
 function Player() {
   //Context
@@ -14,10 +21,11 @@ function Player() {
 
   return (
     <>
+      <div className={playerFile ? 'space' : 'hide'}></div>
       <audio id="player" ref={audioRef}>
         <source src={playerFile ? playerFile.file : null} type="audio/mpeg" />
       </audio>
-      <div className="player_container">
+      <div className={playerFile ? 'player_container' : 'hide'}>
         <div className="top_container">
           <div className="player_title">
             {playerFile
@@ -33,23 +41,25 @@ function Player() {
           </div>
         </div>
         <div className="bottom_container">
-          <button className="player_mid_button">&#9198;</button>
+          <button className="player_mid_button">
+            <FontAwesomeIcon icon={faBackwardStep} />
+          </button>
           {isPlaying ? (
             <button
               className="player_big_button"
-              onClick={() => togglePlayPause()}
-            >
-              &#9208;
+              onClick={() => togglePlayPause()}>
+              <FontAwesomeIcon icon={faPause} />
             </button>
           ) : (
             <button
               className="player_big_button"
-              onClick={() => togglePlayPause()}
-            >
-              &#9205;
+              onClick={() => togglePlayPause()}>
+              <FontAwesomeIcon icon={faPlay} />
             </button>
           )}
-          <button className="player_mid_button">&#9197;</button>
+          <button className="player_mid_button">
+            <FontAwesomeIcon icon={faForwardStep} />
+          </button>
         </div>
       </div>
     </>
@@ -61,7 +71,7 @@ function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60)
     .toString()
-    .padStart(2, "0");
+    .padStart(2, '0');
   return `${mins}:${secs}`;
 }
 

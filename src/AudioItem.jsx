@@ -1,6 +1,6 @@
-import { useAudioPlayer } from "./AudioPlayerContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { useAudioPlayer } from './AudioPlayerContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 
 function AudioItem({ audio: { id, title }, book }) {
   // console.log(useAudioPlayer());
@@ -11,21 +11,20 @@ function AudioItem({ audio: { id, title }, book }) {
   return (
     <>
       <div className="audio_block">
-        <button
+        <div
           className="audio_title"
-          onClick={() => playInContext(bookId, fileId)}
-        >
+          onClick={() => playInContext(bookId, fileId)}>
           {isPlaying && playerFile.fileId === fileId ? (
             <>
               <span className="audio_icon">
-                <FontAwesomeIcon icon={faPlay} />
+                <FontAwesomeIcon icon={faVolumeHigh} />
               </span>
               <span className="audio_title_active">{title}</span>
             </>
           ) : (
             <>{title}</>
           )}
-        </button>
+        </div>
       </div>
     </>
   );
