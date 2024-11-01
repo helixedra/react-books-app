@@ -20,7 +20,13 @@ a {
 body {
   color: var(--dark-text);
 }
-
+html,
+body {
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+  height: 100% !important;
+  min-height: 100vh;
+}
 header {
   background-color: var(--purple);
   position: sticky;
@@ -506,7 +512,7 @@ main {
   cursor: pointer;
 }
 .container {
-  padding: 24px;
+  padding: 16px;
 }
 .top_container {
   max-width: 1280px;
@@ -533,6 +539,10 @@ main {
   padding: 8px 24px;
   font-size: 20px;
 }
+.section_header {
+  padding: 16px;
+  font-size: 20px;
+}
 .books_slider_controls {
   position: absolute;
   top: 50%;
@@ -550,5 +560,42 @@ main {
   line-height: 0;
   background-color: var(--white-50);
   color: var(--purple);
+  font-size: 18px;
+}
+.slick-dots {
+  position: initial !important;
+}
+/* .slick-track {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+} */
+.books_categories_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+.category_item {
+  padding: 8px;
+  background-color: var(--dark-10);
+  border-radius: 24px;
+  margin: 2px;
+}
+.section {
+  margin-bottom: 32px;
+}
+.search {
+  padding: 24px 0;
+}
+.search input {
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 24px;
+  background-color: var(--dark-10);
+  border: none;
+  width: 100%;
+}
+input,
+textarea,
+select {
   font-size: 18px;
 }
