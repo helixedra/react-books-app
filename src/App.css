@@ -512,3 +512,43 @@ main {
   max-width: 1280px;
   margin: 0 auto;
 }
+.books_slider {
+  position: relative;
+}
+.books_slider_wrapper {
+  overflow: hidden;
+}
+.books_slider_container {
+  display: flex;
+  transition: 0.3s ease-in-out;
+  /* gap: 16px; */
+  padding-left: 8px;
+  height: 100%;
+}
+.books_slider_container > div {
+  min-width: 300px;
+  /* height: 300px; */
+}
+.books_slider_header {
+  padding: 8px 24px;
+  font-size: 20px;
+}
+.books_slider_controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 40;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+.slider_button {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  line-height: 0;
+  background-color: var(--white-50);
+  color: var(--purple);
+  font-size: 18px;
+}
