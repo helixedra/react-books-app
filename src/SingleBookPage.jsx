@@ -1,10 +1,14 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from "react-router-dom";
 // import BookItem from "./BookItem";
-import BooksData from './books.json';
-import AudioItem from './AudioItem';
+import BooksData from "./books.json";
+import AudioItem from "./AudioItem";
 // import { render } from "react-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronRight,
+  faHouse,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 function SingleBookPage() {
   // Отримуємо параметр id з URL
@@ -21,11 +25,19 @@ function SingleBookPage() {
   return (
     <>
       <div className="breadcrumbs">
-        <Link to={'/books'}>Books</Link>
+        <Link to={"/"}>
+          <FontAwesomeIcon icon={faHouse} />
+        </Link>
         <span>
           <FontAwesomeIcon icon={faChevronRight} />
         </span>
-        <Link to={'/books/:cat'}>{book.category}</Link>
+        <Link to={"/books"}>Books</Link>
+        <span>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </span>
+        <Link to={"/books/" + book.category.toLowerCase()}>
+          {book.category}
+        </Link>
         <span>
           <FontAwesomeIcon icon={faChevronRight} />
         </span>
@@ -62,6 +74,18 @@ function SingleBookPage() {
             <div className="single_book_description">
               <span className="info_label">Description</span>
               {book.description}
+            </div>
+
+            <div className="rating">
+              {Array.from({ length: 5 }, (_, index) => (
+                <FontAwesomeIcon
+                  icon={faStar}
+                  key={index}
+                  className={
+                    index < book.rating ? "rating_star_active" : "rating_star"
+                  }
+                />
+              ))}
             </div>
             <div className="audio_files_container">
               <div className="audio_files_header">Playlist</div>

@@ -20,7 +20,9 @@
           "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_02_carroll_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71O1It5N1VS._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71O1It5N1VS._AC_UF1000,1000_QL80_.jpg",
+      "listens": 794,
+      "rating": 4
     },
     {
       "id": 2,
@@ -42,7 +44,9 @@
           "file": "https://www.archive.org/download/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_02_twain_128kb.mp3"
         }
       ],
-      "cover": "https://webfiles.ucpress.edu/coverimage/isbn13/9780520343634.jpg"
+      "cover": "https://webfiles.ucpress.edu/coverimage/isbn13/9780520343634.jpg",
+      "listens": 887,
+      "rating": 3
     },
     {
       "id": 3,
@@ -64,7 +68,9 @@
           "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_02_pyle_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81n5FKeo6vL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81n5FKeo6vL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 364,
+      "rating": 4
     },
     {
       "id": 4,
@@ -81,7 +87,9 @@
           "file": "https://archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_01_wells_64kb.mp3"
         }
       ],
-      "cover": "https://static.wikia.nocookie.net/waroftheworlds/images/4/43/Blog_waroftheworldsbookcover.jpg"
+      "cover": "https://static.wikia.nocookie.net/waroftheworlds/images/4/43/Blog_waroftheworldsbookcover.jpg",
+      "listens": 241,
+      "rating": 5
     },
     {
       "id": 5,
@@ -98,7 +106,9 @@
           "file": "https://www.archive.org/download/12yearsaslave_1303_librivox/twelveyearsaslave_01_northup_64kb.mp3"
         }
       ],
-      "cover": "https://dover-books-us.imgix.net/covers/9780486411439.jpg"
+      "cover": "https://dover-books-us.imgix.net/covers/9780486411439.jpg",
+      "listens": 183,
+      "rating": 4
     },
     {
       "id": 6,
@@ -115,7 +125,9 @@
           "file": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_01_austen_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/91HHqVTAJHL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/91HHqVTAJHL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 538,
+      "rating": 3
     },
     {
       "id": 7,
@@ -132,7 +144,9 @@
           "file": "https://www.archive.org/download/frankenstein_shelley_64kb/frankenstein_01_shelley_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71LLYx5PntL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71LLYx5PntL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 268,
+      "rating": 5
     },
     {
       "id": 8,
@@ -149,7 +163,9 @@
           "file": "https://www.archive.org/download/greatexpectations_01_dickens_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81HWr9gSTeL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81HWr9gSTeL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 90,
+      "rating": 5
     },
     {
       "id": 9,
@@ -166,7 +182,9 @@
           "file": "https://archive.org/download/junglebook_librivox/junglebook_01_kipling_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/91BnzP5j5zL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/91BnzP5j5zL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 936,
+      "rating": 5
     },
     {
       "id": 10,
@@ -183,7 +201,9 @@
           "file": "https://archive.org/download/odyssey_librivox/odyssey_01_homer_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/91I3OAOiKcL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/91I3OAOiKcL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 293,
+      "rating": 4
     },
     {
       "id": 11,
@@ -200,7 +220,9 @@
           "file": "https://archive.org/download/moby_dick_librivox/mobydick_01_melville_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81DQJgKlBML._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81DQJgKlBML._AC_UF1000,1000_QL80_.jpg",
+      "listens": 435,
+      "rating": 4
     },
     {
       "id": 12,
@@ -217,7 +239,9 @@
           "file": "https://archive.org/download/iliad_librivox/iliad_01_homer_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81yyDPEdHFL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81yyDPEdHFL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 827,
+      "rating": 5
     },
     {
       "id": 13,
@@ -234,7 +258,9 @@
           "file": "https://archive.org/download/dracula_librivox/dracula_01_stoker_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71kljfPTdmL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71kljfPTdmL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 937,
+      "rating": 4
     },
     {
       "id": 14,
@@ -251,7 +277,9 @@
           "file": "https://archive.org/download/countofmontecristo_librivox/countofmontecristo_01_dumas_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71E2F4gL6jL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71E2F4gL6jL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 454,
+      "rating": 3
     },
     {
       "id": 15,
@@ -268,7 +296,9 @@
           "file": "https://archive.org/download/doriangray_librivox/doriangray_01_wilde_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81XIN+G6l8L._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81XIN+G6l8L._AC_UF1000,1000_QL80_.jpg",
+      "listens": 943,
+      "rating": 3
     },
     {
       "id": 16,
@@ -285,7 +315,9 @@
           "file": "https://archive.org/download/crimeandpunishment_librivox/crimeandpunishment_01_dostoevsky_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71vxDShFLjL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71vxDShFLjL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 703,
+      "rating": 3
     },
     {
       "id": 17,
@@ -302,7 +334,9 @@
           "file": "https://archive.org/download/brotherskaramazov_librivox/brotherskaramazov_01_dostoevsky_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71VXy5FbvhL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71VXy5FbvhL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 386,
+      "rating": 4
     },
     {
       "id": 18,
@@ -319,7 +353,9 @@
           "file": "https://archive.org/download/donquixote_librivox/donquixote_01_cervantes_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81uN3csAvmL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81uN3csAvmL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 998,
+      "rating": 5
     },
     {
       "id": 19,
@@ -336,7 +372,9 @@
           "file": "https://archive.org/download/ulysses_librivox/ulysses_01_joyce_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/81W1r8a7ShL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/81W1r8a7ShL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 169,
+      "rating": 5
     },
     {
       "id": 20,
@@ -353,7 +391,9 @@
           "file": "https://archive.org/download/janeeyre_librivox/janeeyre_01_bronte_64kb.mp3"
         }
       ],
-      "cover": "https://m.media-amazon.com/images/I/71oNHg7SbRL._AC_UF1000,1000_QL80_.jpg"
+      "cover": "https://m.media-amazon.com/images/I/71oNHg7SbRL._AC_UF1000,1000_QL80_.jpg",
+      "listens": 23,
+      "rating": 4
     }
   ]
 }

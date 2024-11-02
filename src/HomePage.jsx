@@ -2,9 +2,12 @@ import booksData from "./books.json";
 // import BookItem from "./BookItem";
 // import { useRef, useState } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ResponsiveSlider from "./ResponsiveSlider";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   // const [slider, setSlider] = useState(0);
@@ -72,6 +75,7 @@ function HomePage() {
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search for books..."
           />
+          <FontAwesomeIcon icon={faSearch} className="search_icon" />
         </div>
       </div>
       <div className="books_slider section">
@@ -116,7 +120,10 @@ function HomePage() {
         <div className="books_categories_container">
           {Object.entries(categoryCount).map(([category, count]) => (
             <div key={category} className="category_item">
-              {category} {count}
+              <Link to={"/books/" + category.toLowerCase()}>
+                {category}
+                <span className="category_count">{count}</span>
+              </Link>
             </div>
           ))}
         </div>
