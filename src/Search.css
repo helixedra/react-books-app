@@ -1,0 +1,35 @@
+.search_container {
+  position: relative;
+}
+
+.search_dialog {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  margin-top: 16px;
+  left: -16px;
+  z-index: 10;
+  padding: 16px;
+}
+.search_dialog ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.search_dialog li {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+.cover_small img {
+  width: 60px;
+}
+.info_small div {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.title_small {
+  font-size: 16px !important;
+  font-weight: 500;
+}

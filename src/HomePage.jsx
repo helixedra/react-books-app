@@ -1,17 +1,15 @@
 import booksData from "./books.json";
 // import BookItem from "./BookItem";
 // import { useRef, useState } from "react";
-import { useState } from "react";
+import Search from "./Search";
 import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ResponsiveSlider from "./ResponsiveSlider";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function HomePage() {
   // const [slider, setSlider] = useState(0);
-  const [search, setSearch] = useState("");
+
   // const bookRef = useRef(null);
   // const containerRef = useRef(null);
 
@@ -69,14 +67,7 @@ function HomePage() {
   return (
     <>
       <div className="container">
-        <div className="search">
-          <input
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search for books..."
-          />
-          <FontAwesomeIcon icon={faSearch} className="search_icon" />
-        </div>
+        <Search />
       </div>
       <div className="books_slider section">
         <div className="books_slider_header">New Books</div>

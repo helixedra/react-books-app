@@ -46,7 +46,7 @@ function ResponsiveSlider({ books }) {
         breakpoint: 520,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 0,
         },
       },
