@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
 import { useState } from "react";
 import booksData from "./books.json";
+import { Link } from "react-router-dom";
 
 function Search() {
   const [search, setSearch] = useState("");
@@ -20,7 +21,7 @@ function Search() {
 
       //   console.log(searchQuery);
 
-      const searchedData = booksData.books.filter((item) => {
+      const searchedData = booksData.filter((item) => {
         return Object.values(item).some((value) =>
           value.toString().toLowerCase().includes(searchQuery)
         );
@@ -34,6 +35,10 @@ function Search() {
     }
   }
 
+  function handleSearchDialog() {
+    setSearchDialog(!searchDialog);
+    setSearch("");
+  }
   return (
     <>
       <div className="search_container">
@@ -44,6 +49,13 @@ function Search() {
             placeholder="Search for books..."
           />
           <FontAwesomeIcon icon={faSearch} className="search_icon" />
+          <FontAwesomeIcon
+            icon={faXmark}
+            className={
+              searchDialog ? "close_search_icon" : "close_search_icon hide"
+            }
+            onClick={() => handleSearchDialog()}
+          />
         </div>
         <div className={searchDialog ? "search_dialog" : "search_dialog hide"}>
           <ul>
@@ -52,16 +64,22 @@ function Search() {
                 return (
                   <>
                     <li key={item.id}>
-                      <div className="cover_small">
-                        <img src={item.cover} alt="" />
-                      </div>
-                      <div className="info_small">
-                        <div className="title_small">{item.title}</div>
-                        <div>{item.author}</div>
-                        <div>
-                          {item.category} / {item.genre}
+                      <Link
+                        onClick={() => handleSearchDialog()}
+                        key={item.id}
+                        to={`/books/${item.category.toLowerCase()}/${item.id}`}
+                      >
+                        <div className="cover_small">
+                          <img src={item.cover} alt="" />
                         </div>
-                      </div>
+                        <div className="info_small">
+                          <div className="title_small">{item.title}</div>
+                          <div>{item.author}</div>
+                          <div>
+                            {item.category} / {item.genre}
+                          </div>
+                        </div>
+                      </Link>
                     </li>
                   </>
                 );

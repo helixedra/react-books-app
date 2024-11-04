@@ -55,7 +55,7 @@ function ResponsiveSlider({ books }) {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {books.books.map(
+        {books.map(
           (book, index) => index < 10 && <BookItem data={book} key={book.id} />
         )}
       </Slider>

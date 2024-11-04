@@ -21,7 +21,7 @@ export const AudioProvider = ({ children }) => {
     // console.log(fileId);
     // togglePlayPause();
 
-    const book = booksData.books.find((book) => book.id === parseInt(bookId));
+    const book = booksData.find((book) => book.id === parseInt(bookId));
     const file = book?.files?.find((file) => file.id === parseInt(fileId));
 
     setPlayerFile({

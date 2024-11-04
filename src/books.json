@@ -1,399 +1,397 @@
-{
-  "books": [
-    {
-      "id": 1,
-      "title": "Alice in Wonderland",
-      "author": "Lewis Carroll",
-      "category": "Kids",
-      "genre": "Fantasy",
-      "language": "English",
-      "description": "The story follows a young girl named Alice who, feeling bored and sleepy while sitting by a riverbank, encounters a White Rabbit and follows it down a rabbit hole, plunging into a fantastical world filled with curious creatures and whimsical adventures.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Down the Rabbit Hole",
-          "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_01_carroll_64kb.mp3"
-        },
-        {
-          "id": 2,
-          "title": "The Pool of Tears",
-          "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_02_carroll_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71O1It5N1VS._AC_UF1000,1000_QL80_.jpg",
-      "listens": 794,
-      "rating": 4
-    },
-    {
-      "id": 2,
-      "title": "The Adventures of Tom Sawyer",
-      "author": "Mark Twain",
-      "category": "Classic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "Follow the adventures of Tom Sawyer and his friends as they navigate the excitement and dangers of growing up along the Mississippi River.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://ia800103.us.archive.org/19/items/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_01_twain_128kb.mp3"
-        },
-        {
-          "id": 2,
-          "title": "Chapter 2",
-          "file": "https://www.archive.org/download/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_02_twain_128kb.mp3"
-        }
-      ],
-      "cover": "https://webfiles.ucpress.edu/coverimage/isbn13/9780520343634.jpg",
-      "listens": 887,
-      "rating": 3
-    },
-    {
-      "id": 3,
-      "title": "Merry Adventures of Robin Hood",
-      "author": "Howard Pyle",
-      "category": "Classic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The legendary Robin Hood and his band of outlaws fight for justice and adventure in Sherwood Forest.",
-      "files": [
-        {
-          "id": 1,
-          "title": "How Robin Hood Came to be an Outlaw",
-          "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_01_pyle_64kb.mp3"
-        },
-        {
-          "id": 2,
-          "title": "Robin Hood and the Tinker",
-          "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_02_pyle_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81n5FKeo6vL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 364,
-      "rating": 4
-    },
-    {
-      "id": 4,
-      "title": "War of the Worlds",
-      "author": "H.G. Wells",
-      "category": "Science Fiction",
-      "genre": "Sci-Fi",
-      "language": "English",
-      "description": "An account of the Martian invasion of Earth and humanity's struggle for survival.",
-      "files": [
-        {
-          "id": 1,
-          "title": "The War of the Worlds - Book 1 - Chapter 01",
-          "file": "https://archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_01_wells_64kb.mp3"
-        }
-      ],
-      "cover": "https://static.wikia.nocookie.net/waroftheworlds/images/4/43/Blog_waroftheworldsbookcover.jpg",
-      "listens": 241,
-      "rating": 5
-    },
-    {
-      "id": 5,
-      "title": "Twelve Years a Slave",
-      "author": "Solomon Northup",
-      "category": "Non-fiction",
-      "genre": "Memoirs",
-      "language": "English",
-      "description": "Twelve Years a Slave is the memoir of a freeborn African American from New York who is kidnapped and sold into slavery. After being held for twelve years on a Louisiana plantation, he is eventually freed and reunited with his family.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter I",
-          "file": "https://www.archive.org/download/12yearsaslave_1303_librivox/twelveyearsaslave_01_northup_64kb.mp3"
-        }
-      ],
-      "cover": "https://dover-books-us.imgix.net/covers/9780486411439.jpg",
-      "listens": 183,
-      "rating": 4
-    },
-    {
-      "id": 6,
-      "title": "Pride and Prejudice",
-      "author": "Jane Austen",
-      "category": "Classic",
-      "genre": "Romance",
-      "language": "English",
-      "description": "A romantic novel that explores the manners and matrimonial machinations among the British gentry of the early 19th century.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_01_austen_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/91HHqVTAJHL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 538,
-      "rating": 3
-    },
-    {
-      "id": 7,
-      "title": "Frankenstein",
-      "author": "Mary Shelley",
-      "category": "Classic",
-      "genre": "Horror",
-      "language": "English",
-      "description": "Victor Frankenstein's scientific experiment yields a creature whose existence brings horror and tragedy.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://www.archive.org/download/frankenstein_shelley_64kb/frankenstein_01_shelley_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71LLYx5PntL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 268,
-      "rating": 5
-    },
-    {
-      "id": 8,
-      "title": "Great Expectations",
-      "author": "Charles Dickens",
-      "category": "Classic",
-      "genre": "Fiction",
-      "language": "English",
-      "description": "The story of a young boy named Pip and his adventures growing up in Victorian England.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://www.archive.org/download/greatexpectations_01_dickens_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81HWr9gSTeL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 90,
-      "rating": 5
-    },
-    {
-      "id": 9,
-      "title": "The Jungle Book",
-      "author": "Rudyard Kipling",
-      "category": "Kids",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The adventures of a boy named Mowgli, who grows up in the jungle and learns the ways of the wild.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Mowgli's Brothers",
-          "file": "https://archive.org/download/junglebook_librivox/junglebook_01_kipling_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/91BnzP5j5zL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 936,
-      "rating": 5
-    },
-    {
-      "id": 10,
-      "title": "The Odyssey",
-      "author": "Homer",
-      "category": "Epic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The epic journey of Odysseus as he returns home after the Trojan War, facing various obstacles along the way.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Book 1",
-          "file": "https://archive.org/download/odyssey_librivox/odyssey_01_homer_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/91I3OAOiKcL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 293,
-      "rating": 4
-    },
-    {
-      "id": 11,
-      "title": "Moby-Dick",
-      "author": "Herman Melville",
-      "category": "Classic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The narrative of Captain Ahab’s obsessive quest to seek revenge on the white whale Moby Dick.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1 - Loomings",
-          "file": "https://archive.org/download/moby_dick_librivox/mobydick_01_melville_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81DQJgKlBML._AC_UF1000,1000_QL80_.jpg",
-      "listens": 435,
-      "rating": 4
-    },
-    {
-      "id": 12,
-      "title": "The Iliad",
-      "author": "Homer",
-      "category": "Epic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The epic of the Trojan War and the wrath of Achilles, as told by the ancient poet Homer.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Book 1 - The Rage of Achilles",
-          "file": "https://archive.org/download/iliad_librivox/iliad_01_homer_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81yyDPEdHFL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 827,
-      "rating": 5
-    },
-    {
-      "id": 13,
-      "title": "Dracula",
-      "author": "Bram Stoker",
-      "category": "Horror",
-      "genre": "Gothic",
-      "language": "English",
-      "description": "The haunting story of Count Dracula's attempt to spread his vampire curse to England.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1 - Jonathan Harker's Journal",
-          "file": "https://archive.org/download/dracula_librivox/dracula_01_stoker_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71kljfPTdmL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 937,
-      "rating": 4
-    },
-    {
-      "id": 14,
-      "title": "The Count of Monte Cristo",
-      "author": "Alexandre Dumas",
-      "category": "Classic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The epic tale of Edmond Dantès, who escapes from wrongful imprisonment to seek revenge.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1 - Marseilles",
-          "file": "https://archive.org/download/countofmontecristo_librivox/countofmontecristo_01_dumas_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71E2F4gL6jL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 454,
-      "rating": 3
-    },
-    {
-      "id": 15,
-      "title": "The Picture of Dorian Gray",
-      "author": "Oscar Wilde",
-      "category": "Classic",
-      "genre": "Philosophical Fiction",
-      "language": "English",
-      "description": "A dark tale about a man whose portrait ages while he remains young, reflecting his inner corruption.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://archive.org/download/doriangray_librivox/doriangray_01_wilde_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81XIN+G6l8L._AC_UF1000,1000_QL80_.jpg",
-      "listens": 943,
-      "rating": 3
-    },
-    {
-      "id": 16,
-      "title": "Crime and Punishment",
-      "author": "Fyodor Dostoevsky",
-      "category": "Classic",
-      "genre": "Psychological Fiction",
-      "language": "English",
-      "description": "A story of Raskolnikov, a man who explores morality and crime in his internal struggle with guilt.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://archive.org/download/crimeandpunishment_librivox/crimeandpunishment_01_dostoevsky_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71vxDShFLjL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 703,
-      "rating": 3
-    },
-    {
-      "id": 17,
-      "title": "The Brothers Karamazov",
-      "author": "Fyodor Dostoevsky",
-      "category": "Classic",
-      "genre": "Philosophical Fiction",
-      "language": "English",
-      "description": "A philosophical drama that explores faith, doubt, and moral struggles within a Russian family.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Part 1 - Book 1 - Chapter 1",
-          "file": "https://archive.org/download/brotherskaramazov_librivox/brotherskaramazov_01_dostoevsky_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71VXy5FbvhL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 386,
-      "rating": 4
-    },
-    {
-      "id": 18,
-      "title": "Don Quixote",
-      "author": "Miguel de Cervantes",
-      "category": "Classic",
-      "genre": "Adventure",
-      "language": "English",
-      "description": "The adventures of an idealistic but delusional knight, Don Quixote, and his loyal squire, Sancho Panza.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://archive.org/download/donquixote_librivox/donquixote_01_cervantes_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81uN3csAvmL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 998,
-      "rating": 5
-    },
-    {
-      "id": 19,
-      "title": "Ulysses",
-      "author": "James Joyce",
-      "category": "Modernist",
-      "genre": "Fiction",
-      "language": "English",
-      "description": "A novel that follows the life of Leopold Bloom in Dublin on a single day in June 1904.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Episode 1",
-          "file": "https://archive.org/download/ulysses_librivox/ulysses_01_joyce_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/81W1r8a7ShL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 169,
-      "rating": 5
-    },
-    {
-      "id": 20,
-      "title": "Jane Eyre",
-      "author": "Charlotte Brontë",
-      "category": "Classic",
-      "genre": "Romance",
-      "language": "English",
-      "description": "The journey of an orphan girl, Jane Eyre, as she grows up and faces life’s challenges.",
-      "files": [
-        {
-          "id": 1,
-          "title": "Chapter 1",
-          "file": "https://archive.org/download/janeeyre_librivox/janeeyre_01_bronte_64kb.mp3"
-        }
-      ],
-      "cover": "https://m.media-amazon.com/images/I/71oNHg7SbRL._AC_UF1000,1000_QL80_.jpg",
-      "listens": 23,
-      "rating": 4
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "category": "Kids",
+    "genre": "Fantasy",
+    "language": "English",
+    "description": "The story follows a young girl named Alice who, feeling bored and sleepy while sitting by a riverbank, encounters a White Rabbit and follows it down a rabbit hole, plunging into a fantastical world filled with curious creatures and whimsical adventures.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Down the Rabbit Hole",
+        "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_01_carroll_64kb.mp3"
+      },
+      {
+        "id": 2,
+        "title": "The Pool of Tears",
+        "file": "https://ia800208.us.archive.org/18/items/alice_wonderland_0711_librivox/alice_02_carroll_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71O1It5N1VS._AC_UF1000,1000_QL80_.jpg",
+    "listens": 794,
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "title": "The Adventures of Tom Sawyer",
+    "author": "Mark Twain",
+    "category": "Classic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "Follow the adventures of Tom Sawyer and his friends as they navigate the excitement and dangers of growing up along the Mississippi River.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://ia800103.us.archive.org/19/items/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_01_twain_128kb.mp3"
+      },
+      {
+        "id": 2,
+        "title": "Chapter 2",
+        "file": "https://www.archive.org/download/adventures_of_tom_sawyer_1402_librivox/adventuresoftomsawyer_02_twain_128kb.mp3"
+      }
+    ],
+    "cover": "https://webfiles.ucpress.edu/coverimage/isbn13/9780520343634.jpg",
+    "listens": 887,
+    "rating": 3
+  },
+  {
+    "id": 3,
+    "title": "Merry Adventures of Robin Hood",
+    "author": "Howard Pyle",
+    "category": "Classic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The legendary Robin Hood and his band of outlaws fight for justice and adventure in Sherwood Forest.",
+    "files": [
+      {
+        "id": 1,
+        "title": "How Robin Hood Came to be an Outlaw",
+        "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_01_pyle_64kb.mp3"
+      },
+      {
+        "id": 2,
+        "title": "Robin Hood and the Tinker",
+        "file": "https://archive.org/download/merry_adventures_robin_hood_librivox/robinhood_02_pyle_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/81n5FKeo6vL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 364,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "title": "War of the Worlds",
+    "author": "H.G. Wells",
+    "category": "Science Fiction",
+    "genre": "Sci-Fi",
+    "language": "English",
+    "description": "An account of the Martian invasion of Earth and humanity's struggle for survival.",
+    "files": [
+      {
+        "id": 1,
+        "title": "The War of the Worlds - Book 1 - Chapter 01",
+        "file": "https://archive.org/download/war_of_the_worlds_librivox/war_of_the_worlds_01_wells_64kb.mp3"
+      }
+    ],
+    "cover": "https://static.wikia.nocookie.net/waroftheworlds/images/4/43/Blog_waroftheworldsbookcover.jpg",
+    "listens": 241,
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "title": "Twelve Years a Slave",
+    "author": "Solomon Northup",
+    "category": "Non-fiction",
+    "genre": "Memoirs",
+    "language": "English",
+    "description": "Twelve Years a Slave is the memoir of a freeborn African American from New York who is kidnapped and sold into slavery. After being held for twelve years on a Louisiana plantation, he is eventually freed and reunited with his family.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter I",
+        "file": "https://www.archive.org/download/12yearsaslave_1303_librivox/twelveyearsaslave_01_northup_64kb.mp3"
+      }
+    ],
+    "cover": "https://dover-books-us.imgix.net/covers/9780486411439.jpg",
+    "listens": 183,
+    "rating": 4
+  },
+  {
+    "id": 6,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "category": "Classic",
+    "genre": "Romance",
+    "language": "English",
+    "description": "A romantic novel that explores the manners and matrimonial machinations among the British gentry of the early 19th century.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_01_austen_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71CR-BOauCL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 538,
+    "rating": 3
+  },
+  {
+    "id": 7,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "category": "Classic",
+    "genre": "Horror",
+    "language": "English",
+    "description": "Victor Frankenstein's scientific experiment yields a creature whose existence brings horror and tragedy.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://www.archive.org/download/frankenstein_shelley_64kb/frankenstein_01_shelley_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/81EU992zdwL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 268,
+    "rating": 5
+  },
+  {
+    "id": 8,
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "category": "Classic",
+    "genre": "Fiction",
+    "language": "English",
+    "description": "The story of a young boy named Pip and his adventures growing up in Victorian England.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://www.archive.org/download/greatexpectations_01_dickens_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/81elBAS5LcL._UF1000,1000_QL80_.jpg",
+    "listens": 90,
+    "rating": 5
+  },
+  {
+    "id": 9,
+    "title": "The Jungle Book",
+    "author": "Rudyard Kipling",
+    "category": "Kids",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The adventures of a boy named Mowgli, who grows up in the jungle and learns the ways of the wild.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Mowgli's Brothers",
+        "file": "https://archive.org/download/junglebook_librivox/junglebook_01_kipling_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71fbdVaXfpL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 936,
+    "rating": 5
+  },
+  {
+    "id": 10,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "category": "Epic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The epic journey of Odysseus as he returns home after the Trojan War, facing various obstacles along the way.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Book 1",
+        "file": "https://archive.org/download/odyssey_librivox/odyssey_01_homer_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/81g0AATkO9L._AC_UF1000,1000_QL80_.jpg",
+    "listens": 293,
+    "rating": 4
+  },
+  {
+    "id": 11,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "category": "Classic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The narrative of Captain Ahab’s obsessive quest to seek revenge on the white whale Moby Dick.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1 - Loomings",
+        "file": "https://archive.org/download/moby_dick_librivox/mobydick_01_melville_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/616R20nvohL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 435,
+    "rating": 4
+  },
+  {
+    "id": 12,
+    "title": "The Iliad",
+    "author": "Homer",
+    "category": "Epic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The epic of the Trojan War and the wrath of Achilles, as told by the ancient poet Homer.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Book 1 - The Rage of Achilles",
+        "file": "https://archive.org/download/iliad_librivox/iliad_01_homer_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71FVVdj9w4L._AC_UF1000,1000_QL80_.jpg",
+    "listens": 827,
+    "rating": 5
+  },
+  {
+    "id": 13,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "category": "Horror",
+    "genre": "Gothic",
+    "language": "English",
+    "description": "The haunting story of Count Dracula's attempt to spread his vampire curse to England.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1 - Jonathan Harker's Journal",
+        "file": "https://archive.org/download/dracula_librivox/dracula_01_stoker_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71xcDXkr1OL._AC_UF894,1000_QL80_.jpg",
+    "listens": 937,
+    "rating": 4
+  },
+  {
+    "id": 14,
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "category": "Classic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The epic tale of Edmond Dantès, who escapes from wrongful imprisonment to seek revenge.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1 - Marseilles",
+        "file": "https://archive.org/download/countofmontecristo_librivox/countofmontecristo_01_dumas_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/811iBn28JdL._AC_UF894,1000_QL80_.jpg",
+    "listens": 454,
+    "rating": 3
+  },
+  {
+    "id": 15,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "category": "Classic",
+    "genre": "Philosophical Fiction",
+    "language": "English",
+    "description": "A dark tale about a man whose portrait ages while he remains young, reflecting his inner corruption.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://archive.org/download/doriangray_librivox/doriangray_01_wilde_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71fm0Ap7JcL._AC_UF894,1000_QL80_.jpg",
+    "listens": 943,
+    "rating": 3
+  },
+  {
+    "id": 16,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "category": "Classic",
+    "genre": "Psychological Fiction",
+    "language": "English",
+    "description": "A story of Raskolnikov, a man who explores morality and crime in his internal struggle with guilt.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://archive.org/download/crimeandpunishment_librivox/crimeandpunishment_01_dostoevsky_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/612KmKeEYEL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 703,
+    "rating": 3
+  },
+  {
+    "id": 17,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "category": "Classic",
+    "genre": "Philosophical Fiction",
+    "language": "English",
+    "description": "A philosophical drama that explores faith, doubt, and moral struggles within a Russian family.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Part 1 - Book 1 - Chapter 1",
+        "file": "https://archive.org/download/brotherskaramazov_librivox/brotherskaramazov_01_dostoevsky_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71OZJsgZzQL._AC_UF894,1000_QL80_.jpg",
+    "listens": 386,
+    "rating": 4
+  },
+  {
+    "id": 18,
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "category": "Classic",
+    "genre": "Adventure",
+    "language": "English",
+    "description": "The adventures of an idealistic but delusional knight, Don Quixote, and his loyal squire, Sancho Panza.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://archive.org/download/donquixote_librivox/donquixote_01_cervantes_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/71mbJoazlCL._AC_UF894,1000_QL80_.jpg",
+    "listens": 998,
+    "rating": 5
+  },
+  {
+    "id": 19,
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "category": "Modernist",
+    "genre": "Fiction",
+    "language": "English",
+    "description": "A novel that follows the life of Leopold Bloom in Dublin on a single day in June 1904.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Episode 1",
+        "file": "https://archive.org/download/ulysses_librivox/ulysses_01_joyce_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/41Rb-Kz6v1L._AC_UF1000,1000_QL80_.jpg",
+    "listens": 169,
+    "rating": 5
+  },
+  {
+    "id": 20,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "category": "Classic",
+    "genre": "Romance",
+    "language": "English",
+    "description": "The journey of an orphan girl, Jane Eyre, as she grows up and faces life’s challenges.",
+    "files": [
+      {
+        "id": 1,
+        "title": "Chapter 1",
+        "file": "https://archive.org/download/janeeyre_librivox/janeeyre_01_bronte_64kb.mp3"
+      }
+    ],
+    "cover": "https://m.media-amazon.com/images/I/81pwJjgcwwL._AC_UF1000,1000_QL80_.jpg",
+    "listens": 23,
+    "rating": 4
+  }
+]

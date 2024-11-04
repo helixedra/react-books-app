@@ -3,17 +3,20 @@ import BookItem from "./BookItem";
 import booksData from "./books.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faHouse } from "@fortawesome/free-solid-svg-icons";
+import Search from "./Search";
 
 function SingleCategoryPage() {
   const { cat } = useParams();
 
-  const booksByCategory = booksData.books.filter(
+  const booksByCategory = booksData.filter(
     (book) => book.category.toLowerCase() === cat
   );
 
   return (
     <>
-      {" "}
+      <div className="container">
+        <Search />
+      </div>
       <div className="breadcrumbs">
         <Link to={"/"}>
           <FontAwesomeIcon icon={faHouse} />

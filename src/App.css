@@ -609,20 +609,7 @@ main {
 .section {
   margin-bottom: 32px;
 }
-.search {
-  /* padding: 16px 0; */
-  margin-top: 8px;
-  position: relative;
-}
 
-.search input {
-  height: 48px;
-  padding: 8px 16px 8px 42px;
-  border-radius: var(--border-radius);
-  background-color: var(--dark-10);
-  border: none;
-  width: 100%;
-}
 input,
 textarea,
 select {
@@ -633,12 +620,6 @@ select {
   border-radius: var(--border-radius);
   border: none;
   background-color: var(--dark-10);
-}
-.search_icon {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  color: var(--dark-50);
 }
 
 .rating_star_active,

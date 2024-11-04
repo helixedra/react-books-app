@@ -9,13 +9,14 @@ import {
   faHouse,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
+import Search from "./Search";
 
 function SingleBookPage() {
   // Отримуємо параметр id з URL
   const { id } = useParams();
 
   // Знаходимо книгу з відповідним id
-  const book = BooksData.books.find((book) => book.id === parseInt(id));
+  const book = BooksData.find((book) => book.id === parseInt(id));
 
   // Перевіряємо, чи знайшли ми книгу
   if (!book) {
@@ -24,6 +25,9 @@ function SingleBookPage() {
 
   return (
     <>
+      <div className="container">
+        <Search />
+      </div>
       <div className="breadcrumbs">
         <Link to={"/"}>
           <FontAwesomeIcon icon={faHouse} />

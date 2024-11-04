@@ -1,7 +1,31 @@
 .search_container {
   position: relative;
 }
-
+.search {
+  /* padding: 16px 0; */
+  margin-top: 8px;
+  position: relative;
+}
+.search_icon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: var(--dark-50);
+}
+.close_search_icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--dark-50);
+}
+.search input {
+  height: 48px;
+  padding: 8px 16px 8px 42px;
+  border-radius: var(--border-radius);
+  background-color: var(--dark-10);
+  border: none;
+  width: 100%;
+}
 .search_dialog {
   width: 100vw;
   height: 100vh;
@@ -17,7 +41,7 @@
   padding: 0;
   margin: 0;
 }
-.search_dialog li {
+.search_dialog li a {
   display: flex;
   gap: 8px;
   margin: 16px 0;
