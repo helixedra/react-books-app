@@ -10,7 +10,7 @@ import {
   faStar,
   faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
-import Search from "./Search";
+// import Search from "./Search";
 import { useState } from "react";
 
 function SingleBookPage() {
@@ -34,9 +34,6 @@ function SingleBookPage() {
 
   return (
     <>
-      <div className="container">
-        <Search />
-      </div>
       <div className="breadcrumbs">
         <Link to={"/"}>
           <FontAwesomeIcon icon={faHouse} />

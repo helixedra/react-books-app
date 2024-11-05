@@ -10,6 +10,7 @@ import Player from "./Player";
 // import booksData from "./books.json";
 import { AudioProvider } from "./AudioPlayerContext";
 import { useState, useEffect } from "react";
+import Search from "./Search";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -30,6 +31,9 @@ function App() {
           <header>
             <Navbar menuAction={handleMenu} />
           </header>
+
+          <Search />
+
           <main>
             <Routes>
               <Route path="/" element={<HomePage />} />

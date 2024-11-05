@@ -1,5 +1,5 @@
 import booksData from "./books.json";
-import Search from "./Search";
+// import Search from "./Search";
 import { Link } from "react-router-dom";
 import ResponsiveSlider from "./ResponsiveSlider";
 
@@ -11,9 +11,6 @@ function HomePage() {
 
   return (
     <>
-      <div className="container">
-        <Search />
-      </div>
       <div className="books_slider section">
         <div className="books_slider_header">New Books</div>
 

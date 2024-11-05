@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import booksData from "./books.json";
 import { Link } from "react-router-dom";
 
@@ -39,53 +39,72 @@ function Search() {
     setSearchDialog(!searchDialog);
     setSearch("");
   }
+
+  useEffect(() => {
+    const wrapper = document.querySelector(".wrapper");
+
+    if (wrapper) {
+      if (searchDialog) {
+        wrapper.classList.add("no_scroll");
+      } else {
+        wrapper.classList.remove("no_scroll");
+      }
+    }
+  }, [searchDialog]);
+
   return (
     <>
-      <div className="search_container">
-        <div className="search">
-          <input
-            value={search}
-            onChange={(e) => handleSearch(e)}
-            placeholder="Search for books..."
-          />
-          <FontAwesomeIcon icon={faSearch} className="search_icon" />
-          <FontAwesomeIcon
-            icon={faXmark}
-            className={
-              searchDialog ? "close_search_icon" : "close_search_icon hide"
-            }
-            onClick={() => handleSearchDialog()}
-          />
+      <div
+        className={
+          searchDialog ? "search_container sticky_search" : "search_container"
+        }
+      >
+        <div className="search_input_container">
+          <div className="search">
+            <input
+              value={search}
+              onChange={(e) => handleSearch(e)}
+              placeholder="Search for books..."
+            />
+            <FontAwesomeIcon icon={faSearch} className="search_icon" />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className={
+                searchDialog ? "close_search_icon" : "close_search_icon hide"
+              }
+              onClick={() => handleSearchDialog()}
+            />
+          </div>
         </div>
-        <div className={searchDialog ? "search_dialog" : "search_dialog hide"}>
-          <ul>
-            {searchResult &&
-              searchResult.map((item) => {
-                return (
-                  <>
-                    <li key={item.id}>
-                      <Link
-                        onClick={() => handleSearchDialog()}
-                        key={item.id}
-                        to={`/books/${item.category.toLowerCase()}/${item.id}`}
-                      >
-                        <div className="cover_small">
-                          <img src={item.cover} alt="" />
+      </div>
+      <div className={searchDialog ? "search_dialog" : "search_dialog hide"}>
+        <ul>
+          {searchResult &&
+            searchResult.map((item) => {
+              return (
+                <>
+                  <li key={item.id}>
+                    <Link
+                      onClick={() => handleSearchDialog()}
+                      key={item.id}
+                      to={`/books/${item.category.toLowerCase()}/${item.id}`}
+                    >
+                      <div className="cover_small">
+                        <img src={item.cover} alt="" />
+                      </div>
+                      <div className="info_small">
+                        <div className="title_small">{item.title}</div>
+                        <div>{item.author}</div>
+                        <div>
+                          {item.category} / {item.genre}
                         </div>
-                        <div className="info_small">
-                          <div className="title_small">{item.title}</div>
-                          <div>{item.author}</div>
-                          <div>
-                            {item.category} / {item.genre}
-                          </div>
-                        </div>
-                      </Link>
-                    </li>
-                  </>
-                );
-              })}
-          </ul>
-        </div>
+                      </div>
+                    </Link>
+                  </li>
+                </>
+              );
+            })}
+        </ul>
       </div>
     </>
   );
