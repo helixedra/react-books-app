@@ -8,10 +8,14 @@ import {
   faChevronRight,
   faHouse,
   faStar,
+  faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 import Search from "./Search";
+import { useState } from "react";
 
 function SingleBookPage() {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   // Отримуємо параметр id з URL
   const { id } = useParams();
 
@@ -21,6 +25,11 @@ function SingleBookPage() {
   // Перевіряємо, чи знайшли ми книгу
   if (!book) {
     return <h2>Книга не знайдена</h2>;
+  }
+
+  function handleBookmark(id) {
+    console.log(`${id} - Added to Bookmarks`);
+    setIsBookmarked(!isBookmarked);
   }
 
   return (
@@ -50,6 +59,9 @@ function SingleBookPage() {
       <div className="single_book_item">
         <div className="single_book_item_container">
           <div className="single_book_cover_container">
+            {isBookmarked && (
+              <FontAwesomeIcon icon={faBookmark} className="bookmark_big" />
+            )}
             <img
               className="single_book_cover"
               src={book.cover}
@@ -59,6 +71,10 @@ function SingleBookPage() {
           </div>
           <div className="single_book_info_container">
             <div className="single_book_title">{book.title}</div>
+            <button onClick={() => handleBookmark(book.id)}>
+              <FontAwesomeIcon icon={faBookmark} />{" "}
+              {!isBookmarked ? "Add to Bookmarks" : "Remove from Bookmarks"}
+            </button>
             <div className="single_book_author">
               <span className="info_label">Author</span>
               {book.author}
