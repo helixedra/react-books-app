@@ -2,7 +2,6 @@
 import BookItem from "./BookItem";
 import booksData from "./books.json";
 import { useState } from "react";
-import Search from "./Search";
 
 function BooksPage() {
   const [booksByCategory, setBooksByCategory] = useState(booksData);
@@ -23,9 +22,6 @@ function BooksPage() {
   }, {});
   return (
     <>
-      <div className="container">
-        <Search />
-      </div>
       <div className="page_header">
         <div>Books</div>
 
