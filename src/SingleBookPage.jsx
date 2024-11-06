@@ -8,8 +8,11 @@ import {
   faChevronRight,
   faHouse,
   faStar,
-  faBookmark,
+  faSquareMinus,
+  faSquarePlus,
 } from "@fortawesome/free-solid-svg-icons";
+// import { faBookmark as faBookmarkReg } from "@fortawesome/free-regular-svg-icons";
+
 // import Search from "./Search";
 import { useState } from "react";
 import { useAudioPlayer as useBooksContext } from "./AudioPlayerContext";
@@ -94,10 +97,7 @@ function SingleBookPage() {
           </div>
           <div className="single_book_info_container">
             <div className="single_book_title">{book.title}</div>
-            <button onClick={() => handleBookmark(book.id)}>
-              <FontAwesomeIcon icon={faBookmark} />{" "}
-              {!isBookmarked ? "Add to Bookmarks" : "Remove from Bookmarks"}
-            </button>
+
             <div className="single_book_author">
               <span className="info_label">Author</span>
               {book.author}
@@ -130,6 +130,30 @@ function SingleBookPage() {
                 />
               ))}
             </div>
+
+            <button
+              className="wishlist_button"
+              onClick={() => handleBookmark(book.id)}
+            >
+              {!isBookmarked ? (
+                <>
+                  <FontAwesomeIcon
+                    icon={faSquarePlus}
+                    className="bookmark_icon"
+                  />
+                  Add to Wishlist
+                </>
+              ) : (
+                <>
+                  <FontAwesomeIcon
+                    icon={faSquareMinus}
+                    className="bookmark_icon"
+                  />
+                  Remove from Wishlist
+                </>
+              )}
+            </button>
+
             <div className="audio_files_container">
               <div className="audio_files_header">Playlist</div>
               {book.files.map((audio) => (

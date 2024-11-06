@@ -689,3 +689,21 @@ select {
   padding: 6px 16px;
   font-weight: 500;
 }
+.wishlist_button {
+  padding: 0 16px;
+  background-color: var(--dark-10);
+  border-radius: var(--border-radius);
+  color: var(--purple);
+  font-weight: 500;
+  border: none;
+  width: max-content;
+  height: 40px;
+  line-height: 40px;
+}
+.bookmark_icon {
+  margin-right: 8px;
+}
+.bookmark_icon_active {
+  color: var(--dark-30);
+  margin-right: 8px;
+}
