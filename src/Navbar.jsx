@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar({ menuAction }) {
   return (
@@ -26,6 +26,11 @@ function Navbar({ menuAction }) {
           <li>
             <Link to="/books" onClick={() => menuAction()}>
               Books
+            </Link>
+          </li>
+          <li>
+            <Link to="/wishlist" onClick={() => menuAction()}>
+              Wishlist
             </Link>
           </li>
           <li>

@@ -12,12 +12,23 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 // import Search from "./Search";
 import { useState } from "react";
+import { useAudioPlayer as useBooksContext } from "./AudioPlayerContext";
 
 function SingleBookPage() {
-  const [isBookmarked, setIsBookmarked] = useState(false);
+  const { id } = useParams();
+
+  const { handleWishlist, getWishlist } = useBooksContext();
+
+  const [isBookmarked, setIsBookmarked] = useState(() => {
+    const wishlist = getWishlist();
+    return wishlist ? wishlist.includes(parseInt(id)) : false;
+  });
+
+  console.log(isBookmarked);
+
+  // console.log(useBookContext);
 
   // Отримуємо параметр id з URL
-  const { id } = useParams();
 
   // Знаходимо книгу з відповідним id
   const book = BooksData.find((book) => book.id === parseInt(id));
@@ -27,9 +38,21 @@ function SingleBookPage() {
     return <h2>Книга не знайдена</h2>;
   }
 
+  // console.log(getWishlist);
+
+  // function isInWishlist(id) {
+  //   console.log(wishlist.contains(id));
+
+  //   return wishlist.contains(id) ? true : false;
+  // }
+
   function handleBookmark(id) {
-    console.log(`${id} - Added to Bookmarks`);
+    // console.log(id);
+
+    handleWishlist(id);
+    // console.log(`${id} - Added to Bookmarks`);
     setIsBookmarked(!isBookmarked);
+    // console.log(wishlist);
   }
 
   return (
@@ -57,7 +80,10 @@ function SingleBookPage() {
         <div className="single_book_item_container">
           <div className="single_book_cover_container">
             {isBookmarked && (
-              <FontAwesomeIcon icon={faBookmark} className="bookmark_big" />
+              <div className="wishlist_badge">
+                <span>Wishlist</span>
+                <span className="tail"></span>
+              </div>
             )}
             <img
               className="single_book_cover"

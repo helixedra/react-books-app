@@ -24,6 +24,7 @@ function App() {
       document.body.classList.remove("no_overflow");
     }
   }, [menu]);
+
   return (
     <AudioProvider>
       <div className={menu ? "wrapper wrapper_menu_open" : "wrapper"}>
@@ -38,6 +39,8 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/books" element={<BooksPage />} />
+              <Route path="/wishlist" element={"wishlist"} />
+              <Route path="/info" element={"info"} />
               <Route path="/books/:cat" element={<SingleCategoryPage />} />
               <Route path="/books/:cat/:id" element={<SingleBookPage />} />
             </Routes>

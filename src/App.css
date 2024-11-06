@@ -450,7 +450,7 @@ span.audio_title_active {
   padding: 24px;
 }
 .single_book_cover {
-  max-width: 400px;
+  /* max-width: 400px; */
   width: 100%;
 }
 @media (max-width: 820px) {
@@ -660,4 +660,32 @@ select {
 .single_book_cover_container {
   position: relative;
   z-index: 1;
+}
+.wishlist_badge {
+  /* background-color: var(--purple);
+  padding: 8px 16px; */
+  color: white;
+  position: absolute;
+  bottom: 48px;
+  left: 24px;
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+}
+.wishlist_badge span.tail {
+  content: "";
+  display: block;
+  /* display: inline-block; */
+  width: 24px;
+  height: 32px;
+  background-color: var(--purple);
+  clip-path: polygon(0% 0%, 40% 0, 0 50%, 45% 100%, 0% 100%);
+}
+.wishlist_badge span {
+  height: 32px;
+  font-size: 14px;
+  /* display: inline-block; */
+  background-color: var(--purple);
+  padding: 6px 16px;
+  font-weight: 500;
 }

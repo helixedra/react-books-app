@@ -96,6 +96,52 @@ export const AudioProvider = ({ children }) => {
     };
   }, []);
 
+  // const [wishlist, setWishlist] = useState([]);
+
+  function getWishlist() {
+    const storageData = localStorage.getItem("wishlist");
+    return storageData ? JSON.parse(storageData) : null;
+  }
+
+  function handleWishlist(id) {
+    //get all from localStorage
+    const storageData = localStorage.getItem("wishlist");
+    //if storageData = null, add id to localStorage and update wishlist
+    if (!storageData) {
+      localStorage.setItem("wishlist", JSON.stringify([id]));
+      // setWishlist([id]);
+    }
+
+    if (storageData) {
+      const wishlistInStorage = JSON.parse(storageData);
+      const currentItem = wishlistInStorage.indexOf(id);
+
+      // console.log("index this item:-" + currentItem);
+
+      if (currentItem > -1) {
+        const newWishlist = wishlistInStorage.filter((item) => item !== id);
+        localStorage.setItem("wishlist", JSON.stringify(newWishlist));
+        // setWishlist(newWishlist);
+      } else {
+        localStorage.setItem(
+          "wishlist",
+          JSON.stringify([...wishlistInStorage, id])
+        );
+        // setWishlist([...wishlistInStorage, id]);
+      }
+    }
+
+    // if (wishlistInStorage) {
+    //   // console.log(wishlistInStorage);
+    //   setWishlist([...wishlistInStorage, id]);
+    // } else {
+    //   // console.log();
+    //   localStorage.setItem("wishlist", JSON.stringify([id]));
+    //   setWishlist([id]);
+    // }
+    // console.log(wishlist);
+  }
+
   return (
     <AudioPlayerContext.Provider
       value={{
@@ -107,6 +153,8 @@ export const AudioProvider = ({ children }) => {
         togglePlayPause,
         playInContext,
         playerFile,
+        handleWishlist,
+        getWishlist,
       }}
     >
       {children}
