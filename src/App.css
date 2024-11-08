@@ -242,6 +242,7 @@ a .book_author {
   bottom: 0;
   color: var(--dark-text);
   box-shadow: 1px 1px 10px var(--dark-30);
+  z-index: 90;
 }
 .player_progress {
   width: 100%;
